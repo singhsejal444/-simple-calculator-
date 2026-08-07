@@ -1,0 +1,119 @@
+/* Remove browser's default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Style the complete webpage */
+body {
+    font-family: Arial, sans-serif;
+
+    /* Center calculator horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Full screen height */
+    min-height: 100vh;
+
+    background-color: #f2f2f2;
+}
+
+
+/* Main calculator box */
+.calculator {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    /* Creates a soft shadow around calculator */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Calculator heading */
+.calculator h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Calculator display */
+#display {
+    width: 100%;
+    height: 60px;
+
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-size: 25px;
+
+    /* Numbers appear on right side */
+    text-align: right;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+/*
+CSS Grid helps us arrange buttons
+in rows and columns.
+*/
+.buttons {
+    display: grid;
+
+    /* Create 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Space between buttons */
+    gap: 10px;
+}
+
+
+/* Common styling for every button */
+button {
+    padding: 15px;
+
+    font-size: 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #e6e6e6;
+
+    /* Shows hand cursor when mouse is over button */
+    cursor: pointer;
+}
+
+
+/* Change button appearance when mouse is over it */
+button:hover {
+    background-color: #d5d5d5;
+}
+
+
+/* Operator buttons */
+.operator {
+    background-color: #ffb84d;
+}
+
+
+/* Equal button */
+.equal {
+    background-color: #4caf50;
+    color: white;
+}
+
+
+/* Clear button */
+.clear {
+    background-color: #ff5c5c;
+    color: white;
+}
